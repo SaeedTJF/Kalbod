@@ -3,9 +3,9 @@
   "dockerfilePath": "./Dockerfile",
   "dockerBuildContext": ".",
   "secrets": {
-    "MY_SSH_KEY": {
+    "dockbase": {
       "fileName": "/root/.ssh/id_rsa",
-      "secretName": "dockbase"
+      "secretName": "xthd2v6s2cm1bvefox1z4j9ng"
     }
   }
 }
