@@ -5,7 +5,7 @@
   "secrets": {
     "dockbase": {
       "fileName": "/root/.ssh/id_rsa",
-      "secretName": "xthd2v6s2cm1bvefox1z4j9ng"
+      "secretName": "dockbase"
     }
   }
 }
