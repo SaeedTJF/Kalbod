@@ -32,7 +32,7 @@ COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 
 # باز کردن پورت 3000 برای دسترسی به اپلیکیشن
-EXPOSE 3000
+
 
 # دستور اجرا: اجرای سرور Next.js
 CMD ["npm", "start"]
