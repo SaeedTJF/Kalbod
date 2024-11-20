@@ -1,0 +1,219 @@
+.chatStart {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.chatStartHeader {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.chatStartHeader h2,
+.chatStartHeader h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #202123;
+    margin-bottom: 15px;
+}
+.chatStartHeader h3 {
+    color: #343541;
+    font-weight: 400;
+    font-size: 18px;
+}
+.chatOrSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+.chooseBox {
+    width: 240px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 2px solid #EAECF0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 280px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.3s;
+}
+.chooseBox img {
+    transition: all 0.3s;
+}
+.chooseBox h4 {
+    margin-top: 20px;
+    color: #021D3E;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    text-align: right;
+    transition: all 0.3s;
+}
+.chooseBox p {
+    width: 100%;
+    color: #98A2B3;
+    font-weight: 400;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+.choosenBox {
+    border: 2px solid #021D3E;
+    box-shadow: 0 0 0 4px #021D3E1A;
+    transition: all 0.3s;
+}
+.noChoosenBox {
+    box-shadow: 0 0 0 4px transparent;
+    transition: all 0.3s;
+}
+.chatContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.chatWrap {
+    width: 60%;
+}
+.chatBox {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.resultBox {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.userMessage {
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.userAvatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #3A7A5F;
+}
+.userAvatar img {
+    width: 100%;
+    height: 100%;
+}
+.systemMessage {
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.systemAvatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.systemAvatar img {
+    width: 100%;
+    height: 100%;
+}
+.userMessage .messageContent {
+    background-color: #ffffff;
+    color: #282828;
+    padding: 10px;
+    min-height: 100px;
+    width: calc(100% - 250px);
+    margin-right: 15px;
+    border-radius: 12px;
+}
+.systemMessage .messageContent {
+    background-color: #113E66;
+    color: #ffffff;
+    padding: 10px;
+    min-height: 100px;
+    width: calc(100% - 250px);
+    margin-left: 15px;
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+.messageLoading {
+    width: 250px !important;
+    transition: all 0.3s;
+}
+.personName {
+    font-size: 16px;
+    color: #113E66;
+}
+.systemMessage .personName {
+    color: #ffffff;
+}
+.resultBox .systemMessage .messageContent {
+    background-color: #3A7A5F;
+}
+.messageLoadingSearch {
+    background-color: #3A7A5F !important;
+    width: 250px !important;
+    transition: all 0.3s;
+}
+.clearHistory {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+}
+.clearHistory a {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 8px;
+    box-shadow: 0 0 5px #cccccc;
+    border-radius: 8px;
+}
+.stopGenerating, .continueGenerating {
+    background-color: #ffffff;
+    padding: 3px 5px;
+    font-family: inherit;
+    border-radius: 8px;
+    border: 3px solid #052a4b;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.continueGenerating {
+    background-color: #ffffff;
+}
+.stopGenerating:hover, .continueGenerating:hover {
+    opacity: 0.8;
+}
+@media (max-width: 980px) {
+    .chooseBox {
+        width: 45%;
+    }
+    .chatWrap {
+        width: 90%;
+    }
+    .systemMessage .messageContent {
+        width: 100%;
+    }
+}

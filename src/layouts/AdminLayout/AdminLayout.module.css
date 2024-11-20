@@ -1,0 +1,9 @@
+.main {
+    background-color: #f7f7ff;
+}
+.container {
+    height: calc(100vh - 86px);
+    padding: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
