@@ -7,6 +7,7 @@ WORKDIR /app
 # کپی کردن فایل‌های package.json و package-lock.json برای نصب وابستگی‌ها
 COPY package.json package-lock.json ./
 
+RUN npm cache clean --force
 # نصب وابستگی‌ها با npm
 RUN npm ci
 
