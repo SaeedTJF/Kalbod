@@ -1,0 +1,145 @@
+.homeBg {
+    background-color: #021D3E;
+}
+.videoBg {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+
+    overflow: hidden;
+}
+.videoBg video {
+    width: 100%;
+}
+.videoBg::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(17, 13, 72, 0.5);
+    filter: blur(4px);
+}
+.homeContainer {
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/img/tileAi.png");
+}
+.homeContainer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 98, 247, 0.14);
+}
+.homeBox {
+    width: 50%;
+    min-height: 40vh;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #08062d;
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    padding: 5px;
+    position: relative;
+}
+.right {
+    width: 50%;
+    position: relative;
+    background-color: rgba(17, 62, 102, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.right::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url("/img/khatamBot.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom right;
+    opacity: 0.05;
+}
+.left {
+    width: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left img {
+    display: block;
+    width: 50%;
+}
+.loginActions {
+    flex-wrap: wrap;
+    position: relative;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginActions h1 {
+    color: #f5f5f5;
+    margin-bottom: 50px;
+}
+.authBtn {
+    background-color: #f5f5f5;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 2px solid #021D3E;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.authBtn:hover {
+    opacity: 0.8;
+}
+.authBtn img {
+    height: 24px;
+    display: block;
+    margin-left: 10px;
+}
+.leftBox {
+    width: 100%;
+}
+.leftBox img {
+    display: block;
+    height: 100px;
+    width: auto;
+    margin: 0 auto;
+}
+.homeTyping {
+    margin: 15px auto;
+    width: 80%;
+}
+.homeTyping span {
+    font-size: 16px;
+    color: #021D3E;
+}
+.homeTyping span b {
+    color: #3A7A5F;
+}
